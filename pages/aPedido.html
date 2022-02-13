@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="/css/estilos.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +15,7 @@
     <header class="header">
         <nav> 
             <div class="header__div">
-                <ul class="header__list">
+                <ul class="header__list" data-aos="zoom-out" data-aos-duration="1000">
                     <li><a href="productos.html">Productos</a></li>
                     <li><a href="aPedido.html">A pedido</a></li>
                     <li id="logo"><a href="/"><img src="/logo.png" height="156" width="156"/ alt="logo"></a></li>                
@@ -52,13 +54,17 @@
                     <h3 class="footer__texto">Diseños originales a precios justos.</h3> 
                     <h3 class="footer__texto">Encuéntranos en</h3>
                 </a>
-                <ul class="footer__links">
-                     <li><a href="https://www.instagram.com/bellogesto/"><img src="https://1000marcas.net/wp-content/uploads/2019/11/Instagram-logo.png" height="50" width="50" /> @bellogesto</a></li>
-                     <li><a href="https://api.whatsapp.com/send/?phone=56971369414&text&app_absent=0"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/2048px-WhatsApp_logo-color-vertical.svg.png" height="50" width="50" /> + 56 9 71369414</a></li>
-            
-                </ul>
+                <div data-aos="flip-left"  data-aos-once="true">
+                    <ul class="footer__links">
+                        <li><a href="https://www.instagram.com/bellogesto/"><img src="https://1000marcas.net/wp-content/uploads/2019/11/Instagram-logo.png" height="50" width="50" /> @bellogesto</a></li>
+                        <li><a href="https://api.whatsapp.com/send/?phone=56971369414&text&app_absent=0"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/2048px-WhatsApp_logo-color-vertical.svg.png" height="50" width="50" /> + 56 9 71369414</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
