@@ -16,6 +16,7 @@ html,body
     height: 100%;
   
 }
+
 body{
     background: rgb(255,255,255);
     background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 75%, rgba(194,152,63,0.6711865165988271) 100%);
@@ -27,6 +28,9 @@ body{
     background-repeat: no-repeat;
     height: 100vh;
 
+}
+body a{
+    color: #000000;
 }
 .header{
     color: #ffffff;
@@ -55,7 +59,6 @@ h1{
 .grilla{
     display: grid;
     grid-template-columns: 1fr 1fr;
-   
     padding: 5rem;
     gap: 2rem;
 }
@@ -84,6 +87,10 @@ h1{
     list-style: none;
     font-size: 2.5rem;    
 
+}
+
+.header a{
+    color: #ffffff !important;
 }
 .productos{
 font-size: 2rem;
@@ -120,15 +127,7 @@ overflow: hidden;
     width: 60%;
     font-size: 2rem;
 }
-.formulario{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
-    padding: 4rem;
-    gap: 2rem;
-}
+
 .categorias{
     display: flex;
     gap: 5rem;
@@ -190,12 +189,39 @@ overflow: hidden;
 
 a{
     text-decoration: none;
-    color: #ffffff;    
+}
+
+.footer a{
+    color: #ffffff;
 }
 
 a:hover {
-    color: #c2983f;
+    color: #c2983f !important;
 }
+.form {
+  border: 1px solid #f1f1f1;
+  box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+  font-size: medium;
+
+  }
+
+.form-check-input:checked {
+    background-color: #40413f;
+    border-color: #40413f;
+    }
+input[type="submit"]{
+    color: #000000;
+    border-color: #000000;
+  }
+  input[type="submit"]:hover,
+  input[type="submit"]:focus {
+    color: #ffffff;
+    background-color: #c2983f;
+    outline: none;
+    box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+  }
+
+  
 
 @media screen and (max-width: 768px) {
     .header__list{
@@ -252,5 +278,5 @@ a:hover {
     padding: 2rem;  
     }
     }
-}
+
 
